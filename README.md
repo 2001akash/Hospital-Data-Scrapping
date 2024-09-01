@@ -1,7 +1,7 @@
-# Hospital Data Classification
+# Hospital Data Scrapping
 
 ## Overview
-
+This project involves scraping data from the top 50 hospital websites, cleaning the data, and training a Private GPT model on the collected information.
 This project involves developing a text classification model to categorize hospital-related data. The model uses the Naive Bayes algorithm and `TfidfVectorizer` for text feature extraction. 
 
 ## Project Structure
@@ -86,8 +86,5 @@ To run the scripts, use the following commands:
 - Documentation includes details about the data loading, preprocessing, model training, evaluation, and file saving.
 - Screenshots of the terminal output and generated files are available in the documentation folder.
 
-## Troubleshooting
 
-- If you encounter issues with missing columns or errors during model training, verify that the `cleaned_hospital_data.csv` file contains the expected columns (`data` and `category`). 
-- Ensure all required libraries are installed and properly configured.
 

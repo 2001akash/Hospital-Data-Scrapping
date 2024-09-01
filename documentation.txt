@@ -1,39 +1,39 @@
 
 ### Documentation
 
-#### 1. **Introduction**
+1. Introduction
 
-**Objective:** The purpose of this project is to develop a text classification model that can categorize hospital-related data into predefined labels.
+Objective: The purpose of this project is to develop a text classification model that can categorize hospital-related data into predefined labels.
 
-**Data Source:** Data was loaded from `cleaned_hospital_data.csv`, which contains text data and was used for training and evaluating the model.
+Data Source:Data was loaded from `cleaned_hospital_data.csv`, which contains text data and was used for training and evaluating the model.
 
-#### 2. **Data Loading**
+2. Data Loading
 
-**File Loaded:** `cleaned_hospital_data.csv`
+File Loaded:`cleaned_hospital_data.csv`
 
-**Columns in DataFrame:**
+Columns in DataFrame:
 - `url`
 - `data`
 
-#### 3. **Preprocessing**
+3.Preprocessing
 
-**Preprocessing Details:**
-- **Columns Used:** Only the `data` column was utilized due to the lack of specific labels in the dataset. Dummy labels were used for model training.
-- **Vectorization:** Text data was transformed into numerical features using `TfidfVectorizer`.
+Preprocessing Details:
+- Columns Used: Only the `data` column was utilized due to the lack of specific labels in the dataset. Dummy labels were used for model training.
+- Vectorization: Text data was transformed into numerical features using `TfidfVectorizer`.
 
-#### 4. **Model Training**
+4. Model Training
 
-**Algorithm Used:** `MultinomialNB` (Naive Bayes)
+Algorithm Used:`MultinomialNB` (Naive Bayes)
 
-**Training Process:**
+Training Process:
 - The model was trained on the preprocessed data with a training accuracy of 1.0000.
 
-#### 5. **Model Evaluation**
+5. Model Evaluation
 
-**Model Performance:**
+Model Performance:
 
-- **Accuracy:** 1.0000
-- **Classification Report:**
+- Accuracy: 1.0000
+- Classification Report:
   ```
                 precision    recall  f1-score   support
 
@@ -44,10 +44,10 @@
   weighted avg       1.00      1.00      1.00         9
   ```
 
-#### 6. **Model Saving**
+6.Model Saving
 
-**Files Created:**
-- **Model:** `model.pkl`
-- **Vectorizer:** `vectorizer.pkl`
+Files Created:
+- Model: `model.pkl`
+- Vectorizer: `vectorizer.pkl`
 
-**Status:** Both the trained model and vectorizer have been saved successfully.
+Output: Both the trained model and vectorizer have been saved successfully.
